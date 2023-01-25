@@ -123,7 +123,6 @@ func checkOff(arr []string) {
 	number, _ := strconv.Atoi(input)
 	arr[number-1] = arr[number-1] + "✔️"
 
-	fmt.Println(arr)
 	file, _ := os.Create("ToDo.txt")
 	defer file.Close()
 	for i := 0; i < len(arr); i++ {
